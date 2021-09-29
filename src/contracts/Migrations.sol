@@ -12,7 +12,7 @@ contract  Migration {
         if(msg.sender == owner) _;
     }
 
-    function setCompleted(uint completed) public restriction {
+    function setCompleted(uint completed) public restricted {
         last_completed_migration = completed;
     }
 
